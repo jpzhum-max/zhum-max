@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/zhum-max/zhum-max/main/assets/hud.svg" />
+  <img src="https://raw.githubusercontent.com/jpzhum-max/zhum-max/main/assets/hud.svg" />
 </p>
 
 
