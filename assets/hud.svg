@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6AFF9C" stop-opacity="0.15"/>
+      <stop offset="0.5" stop-color="#6AFF9C" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#6AFF9C" stop-opacity="0.15"/>
+    </linearGradient>
+
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0.415
+                0 0 0 0 1
+                0 0 0 0 0.612
+                0 0 0 0.65 0" result="colored"/>
+      <feMerge>
+        <feMergeNode in="colored"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      .bg { fill: #0D1117; }
+      .grid { stroke: #6AFF9C; stroke-opacity: .08; stroke-width: 1; }
+      .frame { fill: none; stroke: #6AFF9C; stroke-opacity: .55; stroke-width: 2; }
+      .thin { stroke: #6AFF9C; stroke-opacity: .25; stroke-width: 1; }
+      .txt { fill: #C9D1D9; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+      .accent { fill: #6AFF9C; }
+      .small { font-size: 14px; letter-spacing: 1px; }
+      .title { font-size: 34px; font-weight: 700; letter-spacing: 2px; }
+      .mono { font-size: 16px; opacity: .9; }
+      .pulse { filter: url(#glow); }
+      @keyframes scan { 0% { transform: translateX(-420px);} 100% { transform: translateX(1600px);} }
+      @keyframes flicker { 0%, 100% { opacity: .95;} 50% { opacity: .65;} }
+      @keyframes dash { to { stroke-dashoffset: -1200; } }
+      .scan { animation: scan 4.8s linear infinite; opacity:.22; }
+      .flicker { animation: flicker 2.2s ease-in-out infinite; }
+      .dash { stroke-dasharray: 10 10; stroke-dashoffset: 0; animation: dash 9s linear infinite; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1200" height="320"/>
+
+  <g>
+    <path class="grid" d="M0 40H1200M0 80H1200M0 120H1200M0 160H1200M0 200H1200M0 240H1200M0 280H1200"/>
+    <path class="grid" d="M80 0V320M160 0V320M240 0V320M320 0V320M400 0V320M480 0V320M560 0V320M640 0V320M720 0V320M800 0V320M880 0V320M960 0V320M1040 0V320M1120 0V320"/>
+  </g>
+
+  <rect class="frame pulse" x="28" y="22" width="1144" height="276" rx="16"/>
+  <path class="thin dash" d="M60 92H1140"/>
+  <path class="thin" d="M60 252H1140"/>
+
+  <rect class="scan" x="-420" y="22" width="260" height="276" fill="url(#g)"/>
+
+  <g transform="translate(70,60)">
+    <text class="txt small accent flicker">CORE SYSTEM</text>
+    <text class="txt title pulse" y="46">JOÃO PEDRO NOGUEIRA</text>
+    <text class="txt mono" y="84">Automation Engineer • Systems & Efficiency</text>
+
+    <g transform="translate(0,112)">
+      <rect x="0" y="0" width="420" height="36" rx="10" fill="#0B141A" stroke="#6AFF9C" stroke-opacity=".35"/>
+      <text class="txt small" x="16" y="24">DIRECTIVE:</text>
+      <text class="txt small accent" x="140" y="24">AUTOMATE FIRST</text>
+    </g>
+  </g>
+
+  <g transform="translate(820,64)">
+    <text class="txt small accent">STATUS / TELEMETRY</text>
+
+    <g transform="translate(0,20)">
+      <rect x="0" y="0" width="310" height="170" rx="14" fill="#0B141A" stroke="#6AFF9C" stroke-opacity=".25"/>
+      <text class="txt small" x="16" y="34">CORE REACTOR</text>
+      <text class="txt small accent" x="180" y="34">PYTHON</text>
+
+      <text class="txt small" x="16" y="70">MODE</text>
+      <text class="txt small accent" x="180" y="70">OPERATIONAL</text>
+
+      <text class="txt small" x="16" y="106">SECONDARY</text>
+      <text class="txt small accent" x="180" y="106">JAVA • WEB</text>
+
+      <text class="txt small" x="16" y="142">USER</text>
+      <text class="txt small accent" x="180" y="142">ZHUM-MAX</text>
+    </g>
+  </g>
+
+  <g class="thin pulse">
+    <path d="M28 70H56M28 70V44"/>
+    <path d="M1172 70H1144M1172 70V44"/>
+    <path d="M28 250H56M28 250V276"/>
+    <path d="M1172 250H1144M1172 250V276"/>
+  </g>
+</svg>
