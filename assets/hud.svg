@@ -26,7 +26,8 @@
   <g transform="translate(70,70)">
     <text class="small accent">CORE SYSTEM</text>
     <text y="44" class="title">JOÃO PEDRO NOGUEIRA</text>
-    <text y="80">Automation Engineer • Systems & Efficiency</text>
+    <text y="80">Automation Engineer • Systems &amp; Efficiency</text>
+
 
     <rect y="108" width="380" height="36" rx="8" fill="#0B141A" stroke="#6AFF9C" opacity=".4"/>
     <text y="132" x="16" class="small">DIRECTIVE:</text>
