@@ -32,7 +32,7 @@ Directive ..... Systems > Manual Work
 ## 🧠 About
 - 🎓 Software Engineering student  
 - 🏭 Working at **Jalles** (internal automation and reporting tools)  
-- 🐍 **Python** (main) • ☕ **Java** (basic)  
+- 🐍 **Python** (main) • ☕ **Java** (basic) • 🎨 html/css (basic)
 - ⚙️ Automation • Data checks • Dashboards • Process optimization  
 
 > Internal projects are described by **impact**, without exposing proprietary code.
@@ -42,7 +42,7 @@ Directive ..... Systems > Manual Work
  -->
 ## 🛠️ Current Stack
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=python,java,git,github&theme=dark" />
+<img src="https://skillicons.dev/icons?i=html,css,python,java,git,github&theme=dark" alt="Skills: HTML, CSS, Python, Java, Git, GitHub" />
 </p>
 
 ## 📈 GitHub
